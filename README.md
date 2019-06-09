@@ -1,19 +1,20 @@
 # pixi-nwjs-starter
-Example App using pixiJS and Node-Webkit SDK for desktop x64.
+Example App using pixiJS v5 and Node-Webkit SDK for desktop x64.
 
 ### FEATURE
 - include basic `package.json` + `jsconfig.json`+ `index.html` + `launch.json`.
-- Node and v8 include in the engine , no need dependency.
-- Basic hyrachi with PIXIv5: `nwjs.exe` => `index.html` => `main.js` => `app.js` => `info.js`.
+- Node and v8 include in the engine, no need dependency.
+- Basic hibachi with PIXIv5: `nwjs.exe` => `index.html` => `main.js` => `app.js` => `info.js`.
 - Easy start and show app with vsCode debugger SDK.
-- Easy start with node commande.
+- Easy start with node command.
 - Easy `.zip` package distribution for desktop.
 - Control & write on machine information demo.
 - Based on HTML - CSS - JS - NWJS - NODE = CHROMIUM V8 
 - Auto devTool with APK
 - Auto resize with fixed resolution
 - Sugar code es6 with class
-- FullScreen and Refresh `F4` || `F5` for all desktop environement.
+- FullScreen and Refresh `F4` || `F5` for all desktop environments.
+
 ___
 
 ### PREVIEW
@@ -78,14 +79,14 @@ move ress.nw ./dist-nwjs-x64
 # change directory
 cd ./dist-nwjs-x64
 
-# package in myGame.exe
+# package in myAPP.exe
 copy /b nw.exe+ress.nw myAPP.exe
 
 ```
 - `myAPP.exe` it your application, people should not allow to uncompresse ressource.
 ___
 ### LEARN MORE
-[WebApp to DesktopApp with Node-Webkit at HTML5devconf ](https://github.com/dakom/html5-boilerplate/tree/react)
+[WebApp to DesktopApp with Node-Webkit at HTML5devconf ](https://www.youtube.com/watch?v=d2tYH7vXMUM)
 (Published on Jan 28, 2014)
 ___
 ### END NOTE
