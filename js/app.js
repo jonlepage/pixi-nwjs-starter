@@ -1,3 +1,4 @@
+/** pixi app, you can link options from external file system */
 class _App extends PIXI.Application {
     constructor(options={
         width: 1920, 
@@ -7,7 +8,6 @@ class _App extends PIXI.Application {
         resolution: 1,
         sharedTicker:true,
         backgroundColor: 0x4f4f4f
-        // powerPreference: SLI&CrossFire GPU, TODO: study me
       }) {
         super(options);
           document.body.appendChild(this.view);
@@ -21,17 +21,12 @@ class _App extends PIXI.Application {
     initialize(){
         this.initialize_nwjs();
         this.initialize_listener();
-        $info.initialize();
+        $demo.initialize();
     };
 
     /** setup window app nwjs and debugger */
     initialize_nwjs() {
-        let win = nw.Window.get();
-        //auto-start devTool chromium v8
-        win.showDevTools();
-        let gui = eval("require('nw.gui')"); // yes i know, eval unBreak vscode intellisence. tell me if you find a tricks
-         // open demo page 
-        gui.Window.open('https://pixijs.io/examples/#/demos-basic/container.js');
+        let gui = eval("require('nw.gui')"); 
          // focus on app
         gui.Window.get().focus();
         // resize app

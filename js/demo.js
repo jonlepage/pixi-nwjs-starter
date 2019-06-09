@@ -1,8 +1,11 @@
-class _Info {
+class _Demo {
     constructor() {
+        this.gui = eval("require('nw.gui')"); // yes i know, eval unBreak vscode intellisence. tell me if you find a tricks
     };
 
     initialize(){
+        //show some nwjs stuff
+        this.showPage();
         // System details (CPU / Memory, etc)
         const os = require('os');
         // String which we'll write to file
@@ -41,6 +44,15 @@ class _Info {
         PIXI.Ticker.shared.add((delta) => { filter.seed+=1 });
     };
 
+    showPage(){
+        const gui = this.gui;
+         // open demo page 
+         gui.Window.open('https://pixijs.io/examples/#/demos-basic/container.js');
+         let win = nw.Window.get();
+         //auto-start devTool chromium v8
+         win.showDevTools();
+    };
+
     formatBytes(bytes, decimals = 2) {
         if (bytes === 0) return '0 Bytes';
         const k = 1024;
@@ -68,5 +80,5 @@ class _Info {
     };
 };
 
-let $info = new _Info();
-console.log('%c _App', 'background: #222; color: #bada55',$info);
+let $demo = new _Demo();
+console.log('%c _Demo', 'background: #222; color: #bada55',$demo);
