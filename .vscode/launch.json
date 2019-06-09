@@ -1,0 +1,31 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "nwjs",
+            "request": "launch",
+            "name": "nwjs Node debug",
+            "runtimeExecutable": "${workspaceRoot}\\node_modules\\nw\\nwjs\\nw.exe",
+            "runtimeArgs": [
+                "${workspaceRoot}",
+                "--remote-debugging-port=9222"
+            ],
+            "webRoot": "${workspaceRoot}",
+            "port": 9222,
+            "reloadAfterAttached": true,
+            "sourceMaps": false,
+            "nwjsVersion": "any",
+        },
+        {
+            "type": "nwjs",
+            "request": "attach",
+            "name": "Attach to NWjs",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}",
+            "reloadAfterAttached": true,
+        },
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "pixi-nwjs-starter",
+    "main": "index.html",
+    "window": {
+        "icon": "ico/icoP5.png"
+    },
+    "chromium-args": "--remote-debugging-port=9222 --ignore-gpu-blacklist --enable-gpu-rasterization --enable-gpu-memory-buffer-video-frames --enable-native-gpu-memory-buffers --enable-zero-copy",
+    "dependencies": {
+        "nw": "^0.38.4-sdk",
+        "pixi.js": "^5.0.3"
+    }
+}
